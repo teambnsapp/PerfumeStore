@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flora Store</title>
+    <link rel="stylesheet" href="style/FlorePerfume.css" />
+  </head>
+
+  <body class="body">
+    <!-- HEADER -->
+    <header class="Header">
+      <img class="MainHeadimg" src="./Images/logo 3.0.png" alt="Flora Logo" />
+    </header>
+
+    <!-- MAIN LAYOUT -->
+    <div class="div1">
+      <!-- SIDEBAR -->
+      <aside class="aside">
+        <a class="link" href="./Main.html">Home</a>
+        <a class="link" href="./cart.html">Cart</a>
+        <a class="link" href="./login.html">Admin Only</a>
+      </aside>
+
+      <!-- PRODUCTS AREA -->
+      <main class="productselect">
+        <!-- MEN -->
+        <section class="category">
+          <h3>Men</h3>
+          <div id="products-men" class="products-container"></div>
+        </section>
+
+        <!-- WOMAN -->
+        <section class="category">
+          <h3>Woman</h3>
+          <div id="products-woman" class="products-container"></div>
+        </section>
+
+        <!-- UNISEX -->
+        <section class="category">
+          <h3>Unisex</h3>
+          <div id="products-unisex" class="products-container"></div>
+        </section>
+      </main>
+    </div>
+    <!-- Toast notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- SCRIPT -->
+    <script type="module" src="./js/store.js"></script>
+  </body>
+</html>

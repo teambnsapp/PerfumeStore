@@ -1,0 +1,2 @@
+Your data is open by default to enable quick setup. 
+However, you must update your security rules within 30 days to enable long-term client read/write access.

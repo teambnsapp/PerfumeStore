@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="./style/FlorePerfume.css" />
+  </head>
+  <body class="adminpanel">
+    <form class="formlogin" id="loginForm">
+      <h1>Admin Login</h1>
+      <input
+        class="logininput"
+        type="email"
+        id="email"
+        placeholder="Email"
+        required
+      />
+      <div></div>
+      <br />
+      <input
+        class="logininput"
+        type="password"
+        id="password"
+        placeholder="Password"
+        required
+      />
+      <div></div>
+      <br />
+      <button class="logininput" type="submit">Login</button>
+    </form>
+
+    <p id="errorMsg" style="color: red"></p>
+
+    <script type="module" src="./js/login.js"></script>
+  </body>
+</html>

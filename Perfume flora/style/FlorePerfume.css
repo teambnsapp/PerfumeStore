@@ -1,0 +1,219 @@
+.adminform{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.adminpanel{
+    padding: 5px;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    background-image: url(https://teambnsapp.github.io/PerfumeStore/Images/Logo.jpeg);
+}
+.admininput{
+    color: rgb(0, 0, 0);
+    background-color: rgb(231, 231, 231);
+}
+.logininput{
+    color: black;
+    background-color: rgb(231, 231, 231);
+}
+.formlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    flex-direction: column;
+}
+/* ===== BODY ===== */
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111; /* deep black */
+  color: #fff;
+}
+
+/* ===== HEADER ===== */
+.Header {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.MainHeadimg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* makes image fill the header nicely */
+}
+
+/* ===== SIDEBAR ===== */
+.aside {
+  width: 220px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #000000; /* darker black */
+  border-right: 2px solid red; /* red accent */
+  box-shadow: 2px 0 8px rgba(255, 0, 0, 0.3);
+}
+
+.link {
+  text-decoration: none;
+  color: #ff4d4d; /* bright red text */
+  padding: 12px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  background-color: #ff1a1a; /* dark red hover */
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.div1 {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  flex-direction: row;
+}
+
+/* ===== PRODUCT SECTIONS ===== */
+.productselect {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column; /* stack categories vertically */
+  gap: 40px; /* space between Men / Woman / Unisex sections */
+  width: 100%;
+}
+
+/* Each category container (Men, Woman, Unisex) */
+.products-container {
+  display: grid; /* side by side cards */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* responsive cards */
+  gap: 20px; /* space between cards */
+  width: 100%;
+  margin-top: 10px; /* spacing from heading */
+  margin-bottom: 40px; /* spacing to next category */
+}
+
+/* ===== PRODUCT CARD EXAMPLE ===== */
+.product-card {
+  background-color: #000000;
+  border: 1px solid #ff0000;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 5px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.5);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  color: #ff4d4d;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.product-card p {
+  color: #fff;
+  margin: 10px;
+  font-size: 14px;
+}
+
+/* ===== CATEGORY WRAPPER FIX ===== */
+.div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px;
+}
+
+.qty-btn {
+  width: 25px;
+  height: 25px;
+  background-color: #111;
+  color: #fff;
+  border: 1px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.qty-btn:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.quantity-container input {
+  width: 40px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid red;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Add to Cart button */
+.add-to-cart-btn {
+  margin: 5px 10px 10px 10px;
+  padding: 5px 10px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #ff4d4d;
+}
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(-10px);
+  pointer-events: auto;
+}
+.divcart{
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+    ;
+}

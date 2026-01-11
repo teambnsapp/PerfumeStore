@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style/FlorePerfume.css" />
+  </head>
+  <body class="body">
+    <header class="Header">
+      <img class="MainHeadimg" src="./Images/logo 3.0.png" alt="Flora Logo" />
+    </header>
+    <div class="divcart">
+    <aside class="aside">
+      <a class="link" href="./Main.html">Home</a>
+      <a class="link" href="./cart.html">Cart</a>
+      <a class="link" href="./login.html">Admin Only</a>
+    </aside>
+    <section>
+         <main class="productselect">
+      <h2>Your Cart</h2>
+      <div id="cartItems"></div>
+      <h3 id="cartTotal">Total: $0.00</h3>
+    </main>
+  </div>
+    
+<button id="checkoutBtn" class="add-to-cart-btn">Checkout via WhatsApp</button>
+
+<!-- Toast notification -->
+<div id="toast" class="toast"></div>
+
+    </section>
+</div>
+    <script type="module" src="./js/cart.js"></script>
+  </body>
+</html>
